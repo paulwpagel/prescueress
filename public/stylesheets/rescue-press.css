@@ -1,0 +1,586 @@
+
+/* _____            _____     */
+/* |  __ \     _    |  __ \   */
+/* | |__) |  _| |_  | |__) |  */
+/* |  _  /  |_   _| |  ___/   */
+/* | | \ \    |_|   | |       */
+/* |_|  \_\         |_|       */
+
+/* R E S C U E    P R E S S   */
+
+/* - - - - - - - - - - - - -  */
+
+/* Stephanie Briones
+/* stephanie@8thlight.com     */
+/* @smbriones                 */
+/* October 28, 2011           */
+
+/* - - - - - - - - - - - - -  */
+
+
+body {
+  background-color: rgba(160, 223, 245, 0.35);
+  
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  
+  margin: 0 2.9em;
+  min-width: 1200px;
+}
+
+div[role=main] {
+  float: left;
+  width: 960px;
+}
+
+/* - - - - - T Y P O G R A P H Y - - - - - */
+
+h1 {
+  color: #333;
+  
+  font-family: 'Lato', serif;
+  font-size: 4em;
+  font-weight: 900;
+  text-shadow: 0px 1px 0px #FFFFFF;
+  text-transform: uppercase;
+
+  margin: 0.25em 0 0 0;
+  width: 121px;
+}
+
+h2 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.333em;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: 0px 1px 0px #FFFFFF;
+}
+
+h1 a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #90DDF9;
+  text-decoration: none;
+}
+
+h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.777em;
+  font-weight: 400;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFFFFF;
+
+  margin-bottom: 1.5em;
+  margin-top: 1.1em;
+}
+
+h4 {
+  color: #333;
+
+  font-family: 'Lato', serif;
+  font-size: 0.75em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 0px #FFFFFF;
+
+  display: inline;
+  width: 121px;
+}
+
+h4 a {
+  color: #333;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  color: #90DDF9;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+cite {
+  color: #000;
+
+  letter-spacing: 1px;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFFFFF;
+}
+
+blockquote {
+  color: #333;
+
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFFFFF;
+
+  border-left: 3px solid #DDD;
+  margin: 1.5em 0 1.5em 0;
+  padding-left: 1em;
+}
+
+blockquote span {
+  display: block;
+}
+
+div.about p,
+div.news p,
+div.purchase p,
+div.contact p,
+div.links p,
+div.submissions p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.333em;
+  font-weight: 400;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFFFFF;
+
+  margin-bottom: 1.333em;
+  margin-top: 1.8em;
+}
+
+div.about a:hover,
+div.news a:hover,
+div.contact a:hover {
+  color: #90DDF9;
+}
+
+/* - - - - - N A V I G A T I O N - - - - - */
+
+div[role=navigation] {
+  float: left;
+  width: 160px;
+}
+
+button {
+  font-family: 'Lato', serif;
+  font-size: 0.75em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0px 1px 0px #888;
+
+  background-color: #333;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-box-shadow: 0px 0px 3px #ddd; /* Saf3-4 */
+  -moz-box-shadow: 0px 0px 3px #ddd; /* FF3.5 - 3.6 */
+  box-shadow: 0px 0px 3px #ddd; /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  border: 1px solid #000;
+
+  float: right;
+  height: 28px;
+  width: 110px;
+  position:absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+button a {
+  color: #fefeef;
+}
+
+button a:hover {
+  color: #90DDF9;
+  text-decoration: none;
+}
+
+div.about,
+div.news,
+div.purchase,
+div.contact,
+div.links,
+div.submissions,
+div.authors {
+  float: left;
+  margin: 3em 20px 3em 1em;
+  width: 460px;
+}
+
+nav {
+  margin: 5em 0 0 1em;
+}  
+
+nav ul li {
+  font-family: 'Lato', serif;
+  font-size: 0.75em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0px 1px 0px #FFFFFF;
+  text-transform: uppercase;
+
+  display: inline-block;
+  margin: 0 2.8em 0 0;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #90DDF9;
+}
+
+/* - - - - - N E W S  P A G E - - - - - */
+
+
+div.news ul {
+  list-style: none;
+  margin-bottom: 6em;
+}
+
+div.news ul li {
+  color: #333;
+
+  font-size: 1.333em;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFF;
+
+  border-left: 3px solid #DDD;
+  margin: 1em 0;
+  padding: 5px 0 5px 1em;
+}
+
+
+/* - - - - - P U R C H A S E  P A G E - - - - - */
+
+div.purchase ul {
+  list-style: none;
+}
+
+div.purchase li {
+  text-shadow: 0px 1px 0px #FFF;
+
+  border-bottom: 1px dashed #BBB;
+  margin: 3em 0 6em 0;
+  position:relative;
+}
+
+img.book {
+  border: 2px solid #AAA;
+  float: left;
+  margin: 0 2em 1em 0;
+  width: 6em;
+}
+
+div.purchase p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFFFFF;
+
+  margin: 1em 0 1em 0;
+}
+
+div.purchase button a {
+  text-decoration: none;
+}
+
+div.purchase h3 {
+  color: #000;
+  margin-top: 0.5em;
+}
+
+div.purchase h4 {
+  line-height: 1.333em;
+}
+
+div.purchase button {
+  margin: 1em 0 0 0;
+}
+
+div.purchase cite {
+  display: inline-block;
+}
+
+div.books {
+  height: 360px;
+  width: 480px;
+  
+  margin-top: 3.1em;
+  position: relative;
+}
+
+div.books figure {
+  display: block;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.books figure img {
+  border: 2px solid #AAA;
+  float: left;
+  margin: 0.5em 1.5em 1em 0;
+  max-height: 120px;
+  width: 80px;
+}
+
+div.books figure a img {
+  opacity: 100;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+div.books figure a:hover img,
+div.books figure a:focus img {
+  opacity: 0.60;
+}
+
+div.books figcaption {
+  display: none;
+  opacity: 0;
+  
+  margin: 0;
+  padding: 5px;
+  
+  position: absolute;
+  bottom: 0em;
+  left: 0em;
+  width: 440px;
+  z-index: 2;
+
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+div.books figcaption h4 {
+  color: #333;
+
+  font-family: 'Lato', serif;
+  font-size: 0.75em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0px 1px 0px white;
+  text-transform: uppercase;
+  
+  display: block;
+  width: 460px;
+}
+
+div.books figcaption cite {
+  color: #888;
+
+  letter-spacing: 1px;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFFFFF;
+}
+
+div.books figure:hover figcaption {
+  display: block;
+  opacity: 1;
+}
+
+/* - - - - - G L O B A L  A S I D E - - - - - */
+
+aside.snippet {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.3em;
+  font-weight: 400;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFFFFF;
+  
+  float: left;
+  margin: 1.9em 0 0 1em;
+  width: 350px;
+}
+
+aside.snippet p {
+  width: 310px;
+}
+
+figure img {
+  border: 2px solid #CCC;
+  margin: 1em 0;
+  width: 350px;
+}
+
+/* - - - - -  C O N T A C T  P A G E  - - - - - */
+
+
+div.contact h3 {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+div.contact h4 {
+  line-height: 1.333em;
+  
+  display: block;
+  width: 480px;
+}
+
+div.contact p {
+  font-size: 1.333em;
+  line-height: 1.333em;
+
+  margin: 1.5em 0;
+}
+
+div.contact ul {
+  list-style: none;
+  margin: 0 0 1em 0;
+}
+
+div.contact ul.address {
+  font-size: 1.5em;
+  text-shadow: 0px 1px 0px #FFF;
+
+  border-left: 3px solid #DDD;
+  margin: 1em 0;
+  padding: 0 0 0 1em;
+}
+
+div.contact cite {
+  font-size: 1.333em;
+}
+
+/* - - - - - L I N K S  P A G E  - - - - - */
+
+div.links ul {
+  list-style: none;
+
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+
+	column-count: 2;
+	column-gap: 20px;
+
+  margin: 1em 0 2em 0;
+}
+
+div.links ul li {
+  line-height: 1.333em;
+}
+
+div.links h4 {
+  margin-bottom: 1em;
+}
+
+div.links a {
+  text-decoration: none;
+}
+
+div.links a:hover {
+  color: #90DDF9;
+  text-decoration: underline;
+}
+
+/* - - - - -  S U B M I S S I O N S  P A G E  - - - - - */
+
+h4.event {
+  font-size: 1.333em;
+  margin: 0.25em 0;
+}
+
+div.submissions p {
+  font-size: 1.2em;
+  line-height: 1.333em;
+  margin: 1em 0;
+}
+
+div.submissions article h4 {
+  margin-bottom: 0.25em;
+}
+
+div.submissions h4 {
+  display: block;
+  width: 480px;
+}
+
+div.submissions h2 {
+  line-height: 1.333em;
+  margin-top: 1.3em;
+}
+
+div.submissions em.closed {
+  color: #AAA;
+}
+
+div.ribbon {
+  border: 5px solid transparent;
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+  border-left: 0 solid transparent;
+
+  position: relative;
+  left: -2em;
+  top: 5.4em;
+  width: 31px;
+
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* - - - - -  A U T H O R S  P A G E  - - - - - */
+
+a.top {
+  color: #333;
+
+  font-family: 'Lato', serif;
+  font-size: 0.75em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0px 1px 0px white;
+  text-transform: uppercase;
+
+  display: block;
+}
+
+img.author-image {
+  border: 2px solid #AAA;
+  float: left;
+  margin: 0 1em 0.5em 0;
+  width: 100px;
+}
+
+div.authors ul {
+  list-style: none;
+}
+
+div.authors ul li {
+  margin: 2em 0;
+}
+
+div.authors h4 {
+  display: inline-block;
+  line-height: 1.333em;
+  width: 300px;
+}
+
+div.authors p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.333em;
+  text-shadow: 0px 1px 0px #FFFFFF;
+
+  margin: 0.5em 0;
+}
