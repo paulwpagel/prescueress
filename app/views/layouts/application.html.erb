@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8" />
   <title>Rescue Press</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "reset" %>
+  <%= stylesheet_link_tag "rescue-press" %>
+
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
   <link href='http://fonts.googleapis.com/css?family=Lato:900|Amaranth|Crimson+Text:400,400italic,700' rel='stylesheet' type='text/css'>
@@ -25,11 +27,12 @@
         <li><%=link_to "links", links_path%></li>
         <li><%=link_to "contact", contact_path%></li>
         <li><a href="http://rescuepress.wordpress.com/">blog</a></li>
-        <li><a href="http://www.facebook.com/pages/Rescue-Press/323432508552"><img src="images/facebook.png"></a></li>
+        <li><a href="http://www.facebook.com/pages/Rescue-Press/323432508552"><%= image_tag "facebook.png"%></a></li>
       </ul> 
     </nav>
     
     <%= yield %>
+
   </div>
 
 </body>
