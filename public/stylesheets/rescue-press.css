@@ -41,7 +41,6 @@ h1 {
   font-family: 'Lato', serif;
   font-size: 4em;
   font-weight: 900;
-  text-shadow: 0px 1px 0px #FFFFFF;
   text-transform: uppercase;
 
   margin: 0.25em 0 0 0;
@@ -53,7 +52,6 @@ h2 {
   font-size: 1.333em;
   font-style: normal;
   font-weight: 400;
-  text-shadow: 0px 1px 0px #FFFFFF;
 }
 
 h1 a {
@@ -70,8 +68,7 @@ h3 {
   font-family: 'Crimson Text', serif;
   font-size: 1.777em;
   font-weight: 400;
-  line-height: 1.333em;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  line-height: 1.5em;
 
   margin-bottom: 1.5em;
   margin-top: 1.1em;
@@ -85,7 +82,6 @@ h4 {
   font-weight: 900;
   letter-spacing: 3px;
   text-transform: uppercase;
-  text-shadow: 0px 1px 0px #FFFFFF;
 
   display: inline;
   width: 121px;
@@ -112,8 +108,7 @@ cite {
   color: #000;
 
   letter-spacing: 1px;
-  line-height: 1.333em;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  line-height: 1.5em;
 }
 
 blockquote {
@@ -123,10 +118,9 @@ blockquote {
   font-size: 1.1em;
   font-style: italic;
   font-weight: 400;
-  line-height: 1.333em;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  line-height: 1.5em;
 
-  border-left: 3px solid #DDD;
+  border-left: 2px solid #2781A1;
   margin: 1.5em 0 1.5em 0;
   padding-left: 1em;
 }
@@ -144,8 +138,7 @@ div.submissions p {
   font-family: 'Crimson Text', serif;
   font-size: 1.333em;
   font-weight: 400;
-  line-height: 1.333em;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  line-height: 1.5em;
 
   margin-bottom: 1.333em;
   margin-top: 1.8em;
@@ -170,7 +163,6 @@ button {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-shadow: 0px 1px 0px #888;
 
   background-color: #333;
 
@@ -210,6 +202,12 @@ div.authors {
   width: 460px;
 }
 
+div.purchase-subscription {
+  float: right;
+  margin-top: 1em;
+  width: 425px;
+}
+
 nav {
   margin: 5em 0 0 1em;
 }  
@@ -219,7 +217,6 @@ nav ul li {
   font-size: 0.75em;
   font-weight: 900;
   letter-spacing: 3px;
-  text-shadow: 0px 1px 0px #FFFFFF;
   text-transform: uppercase;
 
   display: inline-block;
@@ -237,70 +234,88 @@ nav ul li a:hover {
 
 /* - - - - - N E W S  P A G E - - - - - */
 
+div.news h2 { 
+  font-size: 1.9em;
+  line-height: 1.5em;
+  margin-top: 1.3em;
+}
 
 div.news ul {
   list-style: none;
-  margin-bottom: 6em;
+  margin-bottom: 2em;
 }
 
 div.news ul li {
 
   font-size: 1.333em;
-  line-height: 1.333em;
+  line-height: 1.5em;
 
   margin: 1em 0;
   padding: 5px 0 5px 1em;
 }
 
+div.news ul.small-list li {
+  margin: 0;
+}
+
+div.news article {
+  border-bottom: 1px dashed #888;  
+}
+
+div.news figure.news-poster img {
+  max-width: 400px;
+}
+
+div.news figure.light img {
+  border: 1px solid #CCC;
+}
 
 /* - - - - - P U R C H A S E  P A G E - - - - - */
 
-div.purchase ul {
+div.purchase ul, div.purchase-subscription ul {
   list-style: none;
 }
 
-div.purchase li {
-  text-shadow: 0px 1px 0px #FFF;
+div.purchase li, div.purchase-subscription li {
 
-  border-bottom: 1px dashed #BBB;
+  border-bottom: 1px dashed #888;
   margin: 3em 0 6em 0;
 }
 
 img.book {
-  border: 2px solid #AAA;
+  border: 1px solid #888;
   float: left;
   margin: 0 2em 1em 0;
   width: 6em;
 }
 
-div.purchase p {
+div.purchase p, div.purchase-subscription p {
   font-family: 'Crimson Text', serif;
   font-size: 1.1em;
   font-weight: 400;
-  line-height: 1.333em;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  line-height: 1.5em;
 
   margin: 1em 0 1em 0;
 }
 
-div.purchase button a {
+div.purchase button a, div.purchase-subscription a {
   text-decoration: none;
 }
 
-div.purchase h3 {
+div.purchase h3, div.purchase-subscription h3 {
   color: #000;
   margin-top: 0.5em;
 }
 
-div.purchase h4 {
-  line-height: 1.333em;
+div.purchase h4, div.purchase-subscription h4 {
+  line-height: 1.5em;
 }
 
-div.purchase button {
+div.purchase button, div.purchase-subscription button {
   margin: 1em 0 0 0;
 }
 
-div.purchase cite {
+div.purchase cite, div.purchase-subscription button {
   display: inline-block;
 }
 
@@ -320,7 +335,7 @@ div.books figure {
 }
 
 div.books figure img {
-  border: 2px solid #AAA;
+  border: 1px solid #888;
   float: left;
   margin: 0.5em 1.5em 1em 0;
   max-height: 120px;
@@ -366,7 +381,6 @@ div.books figcaption h4 {
   font-size: 0.75em;
   font-weight: 900;
   letter-spacing: 3px;
-  text-shadow: 0px 1px 0px white;
   text-transform: uppercase;
   
   display: block;
@@ -374,11 +388,10 @@ div.books figcaption h4 {
 }
 
 div.books figcaption cite {
-  color: #888;
+  color: #333;
 
   letter-spacing: 1px;
-  line-height: 1.333em;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  line-height: 1.5em;
 }
 
 div.books figure:hover figcaption {
@@ -392,8 +405,7 @@ aside.snippet {
   font-family: 'Crimson Text', serif;
   font-size: 2.3em;
   font-weight: 400;
-  line-height: 1.333em;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  line-height: 1.5em;
   
   float: left;
   margin: 1.9em 0 0 1em;
@@ -405,7 +417,7 @@ aside.snippet p {
 }
 
 figure img {
-  border: 2px solid #CCC;
+  border: 1px solid #888;
   margin: 0 0;
 }
 
@@ -418,7 +430,7 @@ div.contact h3 {
 }
 
 div.contact h4 {
-  line-height: 1.333em;
+  line-height: 1.5em;
   
   display: block;
   width: 480px;
@@ -426,7 +438,7 @@ div.contact h4 {
 
 div.contact p {
   font-size: 1.333em;
-  line-height: 1.333em;
+  line-height: 1.5em;
 
   margin: 1.5em 0;
 }
@@ -438,9 +450,8 @@ div.contact ul {
 
 div.contact ul.address {
   font-size: 1.5em;
-  text-shadow: 0px 1px 0px #FFF;
 
-  border-left: 3px solid #DDD;
+  border-left: 2px solid #2781A1;
   margin: 1em 0;
   padding: 0 0 0 1em;
 }
@@ -466,7 +477,7 @@ div.links ul {
 }
 
 div.links ul li {
-  line-height: 1.333em;
+  line-height: 1.5em;
 }
 
 div.links h4 {
@@ -491,7 +502,7 @@ h4.event {
 
 div.submissions p {
   font-size: 1.2em;
-  line-height: 1.333em;
+  line-height: 1.5em;
   margin: 1em 0;
 }
 
@@ -505,7 +516,8 @@ div.submissions h4 {
 }
 
 div.submissions h2 {
-  line-height: 1.333em;
+  font-size: 1.9em;
+  line-height: 1.5em;
   margin-top: 1.3em;
 }
 
@@ -537,7 +549,7 @@ div.finalists ul {
 }
 
 div.finalists ul li {
-  line-height: 1.333em;
+  line-height: 1.5em;
 }
 
 
@@ -550,14 +562,13 @@ a.top {
   font-size: 0.75em;
   font-weight: 900;
   letter-spacing: 3px;
-  text-shadow: 0px 1px 0px white;
   text-transform: uppercase;
 
   display: block;
 }
 
 img.author-image {
-  border: 2px solid #AAA;
+  border: 1px solid #888;
   float: left;
   margin: 0 1em 0.5em 0;
   width: 100px;
@@ -573,7 +584,7 @@ div.authors ul li {
 
 div.authors h4 {
   display: inline-block;
-  line-height: 1.333em;
+  line-height: 1.5em;
   width: 300px;
 }
 
@@ -581,8 +592,7 @@ div.authors p {
   font-family: 'Crimson Text', serif;
   font-size: 1.1em;
   font-weight: 400;
-  line-height: 1.333em;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  line-height: 1.5em;
 
   margin: 0.5em 0;
 }
