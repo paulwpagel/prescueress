@@ -157,7 +157,18 @@ div[role=navigation] {
   width: 160px;
 }
 
-button {
+input.purchase {
+  color: #fefeef;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+input.purchase:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+button, input.purchase {
   font-family: 'Lato', serif;
   font-size: 0.75em;
   font-weight: 900;
