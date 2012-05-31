@@ -2,6 +2,26 @@
   <h3>Purchase</h3>
   <div class="books">
     <figure>
+      <a href="#10">
+        <%= image_tag "WhaleInTheWoods.jpg"%>
+      </a>
+      <figcaption>
+        <h4>Whale In The Woods</h4> 
+        <cite>Blueberry Morningsnow</cite>
+      </figcaption>
+    </figure>
+    
+    <figure>
+      <a href="#9">
+        <%= image_tag "OFEMBODIES.jpg"%>
+      </a>
+      <figcaption>
+        <h4>Of Embodies</h4> 
+        <cite>Philip Sorenson</cite>
+      </figcaption>
+    </figure>
+    
+    <figure>
       <a href="#1">
         <%= image_tag "m-dickey-the-lily-will.png"%>
       </a>
@@ -68,12 +88,34 @@
     </figure>
   </div>
 
-  <a name="1">
+
+  <a name="9">
     <h3>
       Second Year Catalogue 2011-2012
     </h3>
   </a>
   <ul>
+    <li>
+      <%= image_tag "OFEMBODIES.jpg", :class => "book"%>
+      <h4>Of Embodies,</h4>
+      <cite>Philip Sorenson</cite>
+      <p>
+        Like an army of flowering stones, Philip Sorenson’s OF EMBODIES evolves fixed positions into organic movement and marches straight into your open heart. These poems are the body and the text; the temple and a subject of discovery—their urgency manifesting itself in vanishing memory, actively decomposing letters, and what kind of material might survive you. These poems are interested in evidence, exact specimens, and wild living inquiry. Here there are indications of the inner workings of the earth, upsets, burials, blood, membranes, mouths, and “tongues learning to penetrate a word with the body to lean in and whisper but meaning is a fleeing.” OF EMBODIES was the Editor’s Choice pick for Rescue Press’ 2011 Black Box Poetry Prize. 
+      </p>
+      <a name="10"></a>
+      <input type='button' class='purchase' value='Purchase' onclick='window.location.href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UVBDHP2F5DFDJ"'/>
+    </li>
+    <li>
+      <%= image_tag "WhaleInTheWoods.jpg", :class => "book"%>
+      <h4>Whale in the Woods,</h4>
+      <cite>Blueberry Morningsnow</cite>
+      <p>
+        Inhabited by spirits, shadows, and ghosts harmonizing from the bleak and muddy bottoms of The Lake—the One and Only Lake—Blueberry Elizabeth Morningsnow's debut collection of poems, WHALE IN THE WOODS, is a landscape of wild-hearted voices calling to us through passions so profound only Whitman has ever evoked them. Resolved, at first, to a ruined and dissolving world, these poems expand and reawaken the sounds of a mythmaking chorus. "A lake is born," we learn, "composed entirely of warm human eyes" and "a child / is born with eyes that only see when he closes him / A dark lake writes a poem / about lakes. It's different than / any other poem about lakes." WHALE IN THE WOODS is brazen, sorrowful, ecstatic, and astonished, and Morningsnow a voice like no other in contemporary poetry. Winner of Rescue Press's 2011 Black Box Poetry Prize, selected by Sabrina Orah Mark. 
+      </p>
+      <a name="1"></a>
+      <input type='button' class='purchase' value='Purchase' onclick='window.location.href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X2UMGQJGTLHGN"'/>
+    </li>
+    
     <li>
       <%= image_tag "m-dickey-the-lily-will.png", :class => "book"%>
       <h4>The Lily Will,</h4>
