@@ -2,6 +2,16 @@
   <h3>Purchase</h3>
   <div class="books">
     <figure>
+      <a href="#11">
+        <%= image_tag "PennyCover.jpg"%>
+      </a>
+      <figcaption>
+        <h4>Penny, n.</h4> 
+        <cite>Madeline McDonnell</cite>
+      </figcaption>
+    </figure>
+
+    <figure>
       <a href="#10">
         <%= image_tag "WhaleInTheWoods.jpg"%>
       </a>
@@ -87,6 +97,26 @@
       </figcaption>
     </figure>
   </div>
+  
+  <br /><br /><br />
+
+  <a name="11">
+    <h3>
+      Third Year Catalogue 2012-2013
+    </h3>
+  </a>
+  <ul>
+    <li>
+      <%= image_tag "PennyCover.jpg", :class => "book"%>
+      <h4>Penny, n.</h4>
+      <cite>Madeline McDonnell</cite>
+      <p>
+         A definition: 1) A one-cent coin equal to one hundredth of a dollar; 2) A blue-skirted, soon-to-be thirty-year-old, champagne-swilling, high-rise-dwelling lounge singer; 3) A hopeful and lonely woman in love; 4) The object of a depressive and manic lexicographer's angst and affection; 5) A trivial amount; 6) A slave or servant; 7) An Itty-Bitty-Kitty-Keeper, a Yuppy-puppy, a Munchkin or Muffin; 8) Bridey's maid-of-honor; 9) A mother's pretty wonder; 10) A love-sick story of worth and worry.
+      </p>
+      <a name="10"></a>
+      <input type='button' class='purchase' value='Purchase' onclick='window.location.href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YRBQPKCL2RCGU"'/>
+    </li>
+  </ul>
 
 
   <a name="9">
