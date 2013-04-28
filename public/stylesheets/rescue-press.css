@@ -10,13 +10,6 @@
 
 /* - - - - - - - - - - - - -  */
 
-/* Stephanie Briones
-/* stephanie@8thlight.com     */
-/* @smbriones                 */
-/* October 28, 2011           */
-
-/* - - - - - - - - - - - - -  */
-
 
 body {
   background-color: #a0dff5;
@@ -157,9 +150,20 @@ div[role=navigation] {
   width: 160px;
 }
 
+.purchase, .books.container {
+  overflow: hidden;
+  width: 100% !important;
+}
+
+.book-descriptions {
+  float: left;
+  margin-right: 1em;
+  width: 50%;
+}
+
 input.purchase {
   color: #fefeef;
-  margin: 1em;
+  margin: 1em 0;
   cursor: pointer;
 }
 
@@ -186,8 +190,9 @@ button, input.purchase {
   -moz-box-shadow: 0px 0px 3px #ddd; /* FF3.5 - 3.6 */
   box-shadow: 0px 0px 3px #ddd; /* Opera 10.5, IE9, FF4+, Chrome 10+ */
   border: 1px solid #000;
-  height: 28px;
-  width: 110px;
+  display: inline-block;
+  padding: 0.75em 2em;
+  width: auto !important;
 }
 
 button a {
@@ -312,11 +317,13 @@ div.purchase button a, div.purchase-subscription a {
 
 div.purchase h3, div.purchase-subscription h3 {
   color: #000;
-  margin-top: 0.5em;
+  margin: 0.5em 0 0 0;
 }
 
 div.purchase h4, div.purchase-subscription h4 {
+  display: inline-block;  
   line-height: 1.5em;
+  width: 66%;
 }
 
 div.purchase button, div.purchase-subscription button {
@@ -328,10 +335,8 @@ div.purchase cite, div.purchase-subscription button {
 }
 
 div.books {
-  height: 480px;
-  width: 480px;
-  
-  margin-top: 3.1em;
+  min-height: 360px;
+  margin: 3.1em 0 2.5em 0;
   position: relative;
 }
 
@@ -368,7 +373,6 @@ div.books figcaption {
   opacity: 0;
   
   margin: 0;
-  padding: 5px;
   
   position: absolute;
   bottom: 0em;
