@@ -43,5 +43,5 @@ group :test, :development do
   gem 'json_spec'
   gem 'simplecov'
   gem 'launchy'
-  gem 'sqlite3'
+  gem 'sqlite3-ruby'
 end
