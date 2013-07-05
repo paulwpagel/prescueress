@@ -38,7 +38,6 @@ group :test, :development do
   gem 'rspec-rails', '2.6.1'
   gem 'autotest', '~> 4.4.6'
   gem 'autotest-rails', '~> 4.1.0'
-  gem 'cucumber-rails', '1.0.2'
   gem 'database_cleaner', '0.6.7'
   gem 'json_spec'
   gem 'simplecov'
