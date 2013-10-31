@@ -2,6 +2,26 @@
   <h3>Purchase</h3>
   <div class="books container">
     <figure>
+      <a href="#13">
+        <%= image_tag "the_new_census.jpg"%>
+      </a>
+      <figcaption>
+        <h4>The New Census</h4> 
+        <cite>Edited by Kevin A. González and Lauren Shapiro</cite>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <a href="#12">
+        <%= image_tag "last_word.jpg"%>
+      </a>
+      <figcaption>
+        <h4>Last Word</h4> 
+        <cite>Jonathan Blum</cite>
+      </figcaption>
+    </figure>
+
+    <figure>
       <a href="#11">
         <%= image_tag "PennyCover.jpg"%>
       </a>
@@ -100,13 +120,37 @@
   
 
   <div class="book-descriptions">
-  <a name="11">
+
     <h3>
       Third Year Catalogue 2012-2013
     </h3>
-  </a>
+
   <ul>
     <li>
+      <a name="13"></a>
+      <%= image_tag "the_new_census.jpg", :class => "book"%>
+      <h4>The New Census</h4>
+      <cite>Edited by Kevin A. González and Lauren Shapiro</cite>
+      <p>
+        Edited by Kevin A. González and Lauren Shapiro, with a foreword by Dara Wier. THE NEW CENSUS captures the kaleidoscopic range of contemporary poetry, spanning a complex array of aesthetic, formal, and social concerns. It includes over one hundred poems from forty poets: Carrie Olivia Adams, Eric Baus, John Beer, Nicky Beer, Ciaran Berry, Jericho Brown, Suzanne Buffam, Heather Christle, Eduardo C. Corral, Kyle Dargan, Darcie Dennigan, Sandra Doller, Timothy Donnelly, Joshua Edwards, Emily Kendal Frey, Dobby Gibson, Yona Harvey, Steve Healey, Tyehimba Jess, Keetje Kuipers, Nick Lantz, Dorothea Lasky, Dora Malech, Sarah Manguso, Randall Mann, Sabrina Orah Mark, Chris Martin, J. Michael Martinez, Adrian Matejka, John Murillo, Sawako Nakayasu, Kathleen Ossip, Kiki Petrosino, Zach Savich, Robyn Schiff, James Shea, Nick Twemlow, Sarah Vap, Jerry Williams, and Jon Woodward. Alongside the work of these forty bright stars, THE NEW CENSUS features twenty census polls of its poets as well as dynamic illustrations by artist Lauren Haldeman.
+      </p>
+      <a name="10"></a>
+      <input type='button' class='purchase' value='Purchase' onclick='window.location.href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R2N6HVVURLVTQ"'/>
+    </li>
+    <li>
+      <a name="12"></a>
+      <%= image_tag "last_word.jpg", :class => "book"%>
+      <h4>Last Word</h4>
+      <cite>Jonathan Blum</cite>
+      <p>
+        LAST WORD, a novella, tells the story of Kip Langer, a successful orthognathic surgeon, who is trying to raise three children, including Eric, a bright but socially awkward thirteen-year-old from his first marriage. As Eric gets into more and more trouble at his Conservative Jewish Day School, Kip tries to understand Eric and guide him toward making better choices. The story, set in a Southern suburban community, examines patterns of love, anger, intimacy, inheritance, and disconnection within one modern blended family.
+      </p>
+      <a name="10"></a>
+      <input type='button' class='purchase' value='Purchase' onclick='window.location.href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=76HBJWM3RJB68"'/>
+    </li>
+    
+    <li>
+      <a name="11"></a>
       <%= image_tag "PennyCover.jpg", :class => "book"%>
       <h4>Penny, n.</h4>
       <cite>Madeline McDonnell</cite>
