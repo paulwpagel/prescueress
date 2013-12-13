@@ -2,6 +2,16 @@
   <h3>Purchase</h3>
   <div class="books container">
     <figure>
+      <a href="#14">
+        <%= image_tag "FrontCover.jpg"%>
+      </a>
+      <figcaption>
+        <h4>RENDEZVOUS</h4> 
+        <cite>Todd Melicker</cite>
+      </figcaption>
+    </figure>
+    
+    <figure>
       <a href="#13">
         <%= image_tag "the_new_census.jpg"%>
       </a>
@@ -126,6 +136,18 @@
     </h3>
 
   <ul>
+    <li>
+      <a name="14"></a>
+      <%= image_tag "FrontCover.jpg", :class => "book"%>
+      <h4>RENDEZVOUS</h4>
+      <cite>Todd Melicker</cite>
+      <p>
+        In Todd Melicker's remarkable debut collection, RENDEZVOUS, the reader finds lines that join, converse, and split apart so completely that at times they literally flip, becoming distorted reflections of their own initial utterance. These are poems troubled by adoration and desire, evolution, and the spiraling of the mind immersed in measurement and inquiry. In quick succession we move from the differences between "more sun" and "same sun" to the abundance of the "floodworld/worried" and the strict limitations of "these daily tasks." Melicker writes—of love, of meeting, of the sun's slow revolution, and of return—in ways that keep these poems circling through the reader's mind. "i'm coming aware of the whole, what" he discloses, and "that all parts/ belong."
+      </p>
+      <a name="10"></a>
+      <input type='button' class='purchase' value='Purchase' onclick='window.location.href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCSMMTF3RSQUQ"'/>
+    </li>
+    
     <li>
       <a name="13"></a>
       <%= image_tag "the_new_census.jpg", :class => "book"%>
